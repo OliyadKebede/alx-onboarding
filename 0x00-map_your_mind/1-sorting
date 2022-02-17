@@ -1,0 +1,26 @@
+### reads in three numbers and writes them all in sorted order ###
+
+READ num_1 , num_2 , num_3
+
+IF (num1< num_2) THEN
+      IF (num_1 < num_3) THEN
+         IF (num_2 < num_3) THEN
+            SHOW  num_1 , num_2 , num_3
+         ELSE
+            SHOW  num_1, num_3, num_2
+         END IF
+      ELSE
+         SHOW num_3, num_1, num_2
+      END IF
+   ELSE
+      IF (num_2 < num_3) THEN
+         IF (num_1 < num_3) THEN
+            SHOW  num_2, num_1, num_3
+         ELSE
+            SHOW  num_2, num_3, num_1
+         END IF
+      ELSE
+         SHOW num_3, num_2, num_1
+      END IF
+   END IF
+

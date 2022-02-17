@@ -1,0 +1,14 @@
+###A user will enter numbers that will be added to the
+sum and when a negative number is encountered, stop adding numbers and write out the final result###
+
+INIT sum to 0
+INIT num to 0
+
+WHILE num >= 0
+
+   OBTAIN num
+   INCREMENT sum to num
+
+DISPLAY sum
+
+

@@ -1,0 +1,15 @@
+###calculate the sum of squares of given input of numbers###
+
+OBTAIN numbers
+SET sum to 0
+SET temporary_value to 0
+DECLARE ListOfInputNumbers : ARRAY [0:length of numbers] OF INTEGER
+INIT each numbers to ListOfInputNumbers
+FOR each element on the ListOfInputNumbers
+    CALCULATE  multiply number by itself  THEN BUMB to temporary_value
+    INCREMENT  sum to temporary_value
+    INIT temporary_value to 0
+END FOR
+
+SHOW sum
+
